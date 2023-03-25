@@ -69,11 +69,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/cities" element={<Cities />} />
-        <Route path="/city/:id" element={<City />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/singup" element={<SignUp />} />
+        <Route path="/_mytineraryfrontend/home" element={<Home />} />
+        <Route path="/_mytineraryfrontend/cities" element={<Cities />} />
+        <Route path="/_mytineraryfrontend/city/:id" element={<City />} />
+        <Route path="/_mytineraryfrontend/signin" element={<Signin />} />
+        <Route path="/_mytineraryfrontend/singup" element={<SignUp />} />
         <Route path="*" element={<Home />} />
         <Route path="/prueba" element={<SigninPrueba />} />
       </Routes>
