@@ -69,11 +69,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/elenaperd24.github.io/_mytineraryfrontend/home" element={<Home />} />
-        <Route path="/elenaperd24.github.io/_mytineraryfrontend/cities" element={<Cities />} />
-        <Route path="/elenaperd24.github.io/_mytineraryfrontend/city/:id" element={<City />} />
-        <Route path="/elenaperd24.github.io/_mytineraryfrontend/signin" element={<Signin />} />
-        <Route path="/elenaperd24.github.io/_mytineraryfrontend/singup" element={<SignUp />} />
+        <Route path="https://elenaperd24.github.io/_mytineraryfrontend/home" element={<Home />} />
+        <Route path="https://elenaperd24.github.io/_mytineraryfrontend/cities" element={<Cities />} />
+        <Route path="https://elenaperd24.github.io/_mytineraryfrontend/city/:id" element={<City />} />
+        <Route path="https://elenaperd24.github.io/_mytineraryfrontend/signin" element={<Signin />} />
+        <Route path="https://elenaperd24.github.io/_mytineraryfrontend/singup" element={<SignUp />} />
         <Route path="*" element={<Home />} />
         <Route path="/prueba" element={<SigninPrueba />} />
       </Routes>
