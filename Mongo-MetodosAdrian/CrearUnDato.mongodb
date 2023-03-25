@@ -1,0 +1,29 @@
+// MongoDB Playground
+//https://docs.mongodb.com/manual/crud/
+
+const database = 'alumnos';
+
+//Datos a cargar
+const _nombre = "adrian";
+const _apellido = "deambroggi";
+const _edad = 38;
+const _roll = "Mentor";
+const _grupo = 0;
+
+const okNombre = _nombre.charAt(0).toUpperCase() +_nombre.slice(1).toLowerCase()
+const okApellido= _apellido.charAt(0).toUpperCase() +_apellido.slice(1).toLowerCase()
+
+use(database); // llamamos a nuestra base de datos
+
+// Busca si el documento existe si no existe lo crea, si existe lo modifica con los datos que le carguemos
+db.acnur.findAndModify({query:{apellido:okApellido},//Lo busca por appelido
+update:{$set:{nombre:okNombre, 
+              apellido:okApellido,
+              edad:_edad,
+              roll:_roll,
+              grupo:_grupo}},
+              upsert:true} //Upsert es una mezcla entre update e insert, 
+                           //es decir que si encuentra el documento que establecimos en la query lo actualiza
+                           //si no lo encuentra lo inserta, 
+                           //por defecto uposert es false si no lo declaramos
+)
