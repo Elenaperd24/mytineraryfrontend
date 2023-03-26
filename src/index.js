@@ -14,9 +14,9 @@ ReactDOM.render(
   <React.StrictMode>
 
     <StateProvaider initialState={initialState} reducer={reducer}>
-      <HashRouter>
+    
         <App />
-      </HashRouter>
+    
     </StateProvaider>
 
   </React.StrictMode>,
