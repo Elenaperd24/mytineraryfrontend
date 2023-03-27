@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.70742d68.css",
-    "main.js": "/static/js/main.7bfa5116.js",
-    "static/js/787.847747be.chunk.js": "/static/js/787.847747be.chunk.js",
-    "static/media/banner1.jpg": "/static/media/banner1.f6363b2c48ea780c1f62.jpg",
-    "static/media/pruebabanner.jpg": "/static/media/pruebabanner.d0faf611f21f5c378591.jpg",
-    "static/media/bannerSignin.jpg": "/static/media/bannerSignin.6d6b86341fc8f5978fa8.jpg",
-    "static/media/bannerSignUP.jpg": "/static/media/bannerSignUP.35c140f3f963cb391192.jpg",
-    "static/media/login.png": "/static/media/login.9db8c1a887d5c9710705.png",
-    "static/media/socialmedia.png": "/static/media/socialmedia.dcf9a6cbddeacbf997ea.png",
-    "static/media/logoMyTinerary.png": "/static/media/logoMyTinerary.2f957bd84780037dfb3d.png",
-    "static/media/logoNegro.png": "/static/media/logoNegro.746238ec1ffa2a40bd5a.png",
-    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
-    "index.html": "/index.html",
-    "main.70742d68.css.map": "/static/css/main.70742d68.css.map",
-    "main.7bfa5116.js.map": "/static/js/main.7bfa5116.js.map",
-    "787.847747be.chunk.js.map": "/static/js/787.847747be.chunk.js.map"
+    "main.css": "/_mytineraryfrontend/static/css/main.a33dd3b4.css",
+    "main.js": "/_mytineraryfrontend/static/js/main.8d051baf.js",
+    "static/js/787.847747be.chunk.js": "/_mytineraryfrontend/static/js/787.847747be.chunk.js",
+    "static/media/banner1.jpg": "/_mytineraryfrontend/static/media/banner1.f6363b2c48ea780c1f62.jpg",
+    "static/media/pruebabanner.jpg": "/_mytineraryfrontend/static/media/pruebabanner.d0faf611f21f5c378591.jpg",
+    "static/media/bannerSignin.jpg": "/_mytineraryfrontend/static/media/bannerSignin.6d6b86341fc8f5978fa8.jpg",
+    "static/media/bannerSignUP.jpg": "/_mytineraryfrontend/static/media/bannerSignUP.35c140f3f963cb391192.jpg",
+    "static/media/login.png": "/_mytineraryfrontend/static/media/login.9db8c1a887d5c9710705.png",
+    "static/media/socialmedia.png": "/_mytineraryfrontend/static/media/socialmedia.dcf9a6cbddeacbf997ea.png",
+    "static/media/logoMyTinerary.png": "/_mytineraryfrontend/static/media/logoMyTinerary.2f957bd84780037dfb3d.png",
+    "static/media/logoNegro.png": "/_mytineraryfrontend/static/media/logoNegro.746238ec1ffa2a40bd5a.png",
+    "static/media/revicons.eot": "/_mytineraryfrontend/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/_mytineraryfrontend/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/_mytineraryfrontend/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/_mytineraryfrontend/index.html",
+    "main.a33dd3b4.css.map": "/_mytineraryfrontend/static/css/main.a33dd3b4.css.map",
+    "main.8d051baf.js.map": "/_mytineraryfrontend/static/js/main.8d051baf.js.map",
+    "787.847747be.chunk.js.map": "/_mytineraryfrontend/static/js/787.847747be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70742d68.css",
-    "static/js/main.7bfa5116.js"
+    "static/css/main.a33dd3b4.css",
+    "static/js/main.8d051baf.js"
   ]
 }
