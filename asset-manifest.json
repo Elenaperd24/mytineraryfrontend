@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/_mytineraryfrontend/static/css/main.a33dd3b4.css",
-    "main.js": "/_mytineraryfrontend/static/js/main.902b40cc.js",
+    "main.js": "/_mytineraryfrontend/static/js/main.f5d431aa.js",
     "static/js/787.847747be.chunk.js": "/_mytineraryfrontend/static/js/787.847747be.chunk.js",
     "static/media/banner1.jpg": "/_mytineraryfrontend/static/media/banner1.f6363b2c48ea780c1f62.jpg",
     "static/media/pruebabanner.jpg": "/_mytineraryfrontend/static/media/pruebabanner.d0faf611f21f5c378591.jpg",
@@ -16,11 +16,11 @@
     "static/media/revicons.woff": "/_mytineraryfrontend/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/_mytineraryfrontend/index.html",
     "main.a33dd3b4.css.map": "/_mytineraryfrontend/static/css/main.a33dd3b4.css.map",
-    "main.902b40cc.js.map": "/_mytineraryfrontend/static/js/main.902b40cc.js.map",
+    "main.f5d431aa.js.map": "/_mytineraryfrontend/static/js/main.f5d431aa.js.map",
     "787.847747be.chunk.js.map": "/_mytineraryfrontend/static/js/787.847747be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a33dd3b4.css",
-    "static/js/main.902b40cc.js"
+    "static/js/main.f5d431aa.js"
   ]
 }
