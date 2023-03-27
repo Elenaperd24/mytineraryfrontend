@@ -29,9 +29,7 @@
     "swiper": "^8.0.5",
     "web-vitals": "^2.1.2"
   },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+  "scripts": {   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
