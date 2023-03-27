@@ -1,6 +1,6 @@
 import React from 'react' //IMPORTO PAQUETES DE REACT
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { accionType } from './reducer';
 import { useStateValue } from './StateProvide';
 import './App.css';
@@ -48,7 +48,7 @@ function App() {
               user: user.data
             })
           }
-          else {
+          else {            
             localStorage.removeItem("token")
           }
         }
@@ -66,7 +66,7 @@ function App() {
           console.log(dataItinerary); */
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} />
@@ -78,7 +78,7 @@ function App() {
         <Route path="/prueba" element={<SigninPrueba />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 export default App;
