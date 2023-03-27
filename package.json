@@ -29,7 +29,9 @@
     "swiper": "^8.0.5",
     "web-vitals": "^2.1.2"
   },
-  "scripts": {   
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -53,4 +55,4 @@
       "last 1 safari version"
     ]
   }
-} 
+}
