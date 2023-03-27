@@ -112,14 +112,14 @@ function Signin() {
                                         cookiePolicy={'single_host_origin'}
                                     />
                                 </div>
-                                <div style={{ margin:"4px", backgroundColor: "rgb(76, 105, 186)", borderStyle: "solid", borderColor: "#ff4b4b", borderRadius: "10px", display: "flex", justifyContent: "center" }}>
+                         {/*        <div style={{ margin:"4px", backgroundColor: "rgb(76, 105, 186)", borderStyle: "solid", borderColor: "#ff4b4b", borderRadius: "10px", display: "flex", justifyContent: "center" }}>
                                     <FacebookLogin
                                         appId="1157819554991138"
                                         autoLoad={false}
                                         fields="name,email,picture"
                                         callback={responseFacebook}
                                     />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </form>
