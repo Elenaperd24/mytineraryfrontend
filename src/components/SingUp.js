@@ -32,7 +32,7 @@ function SignUp() {
         detectFrom(NuevoUsuario)
     }
 
-    const responseFacebook = async (response) => {
+/*     const responseFacebook = async (response) => {
         console.log(response)
         const NuevoUsuario = {
             img: response.picture.data.url,
@@ -43,7 +43,7 @@ function SignUp() {
             from: "Facebook"
         }
         detectFrom(NuevoUsuario)
-    }
+    } */
     async function newUser(event) {
         event.preventDefault()
         let name = event.target[0].value
