@@ -66,7 +66,7 @@ function App() {
           console.log(dataItinerary); */
 
   return (
-    <HashRouter>
+    <HashRouter basename={_url}>
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} />
