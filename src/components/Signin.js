@@ -92,9 +92,9 @@ function Signin() {
                         </div>
                         <div className="helpForm" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                             <div className="d-flex textSignUp" >
-                                <h3>Don't have an account?</h3>
+                                <p>Don't have an account?</p>
                                 <LinkRouter to="/singup" style={{ }}>
-                                   <h3> Sign Up </h3>
+                                   <p> Sign Up </p>
                                 </LinkRouter>
                             </div>
                         </div>
