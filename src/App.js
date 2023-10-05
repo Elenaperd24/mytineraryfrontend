@@ -4,17 +4,14 @@ import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom"
 import { accionType } from './reducer';
 import { useStateValue } from './StateProvide';
 import './App.css';
-import Navbar from "./components/Navbar"
-import Home from "./components/Home"
+import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/Footer"
-import City from './components/City';
-import SignUp from './components/SingUp';
-import Signin from './components/Signin';
 import axios from 'axios'
-import Cities from "./components/Cities";
 import swal from 'sweetalert'
-import SigninPrueba from './components/Signinprueba';
 import { _url } from './components/envairoment';
+
+//import components 
+import Home from './components/home/Home';
 
 function App() {
   const [{ cities }, dispatch] = useStateValue()
@@ -69,13 +66,13 @@ function App() {
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/cities" element={<Cities />} />
+     <Route path="/" element={<Home />} />
+        {/*    <Route path="/cities" element={<Cities />} />
         <Route path="/city/:id" element={<City />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/singup" element={<SignUp />} />
-        <Route path="*" element={<Home />} />
-        <Route path="/prueba" element={<SigninPrueba />} />
+        <Route path="*" element={<Home />} /> */}
+
       </Routes>
       <Footer />
     </HashRouter>

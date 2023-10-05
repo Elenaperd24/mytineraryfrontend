@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Rajdhani:wght@300&display=swap');
+element {
+    --main-bg-color: #10004f;
+
+  }
+  :root {
+    --main-font-family: 'Open Sans', sans-serif;
+
+  }
+.contentHero{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.bannerHome{
+   display: flex;
+   justify-content: center;   
+   position: relative;
+   top: 0;
+}
+
+.bannerHome img{
+    border-bottom-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+
+
+.text-banner{
+    position: absolute;
+    top:0;     
+    font-family:var(--main-font-family);
+    width: 60%;
+    left: 20px;
+    top: 30px;
+   
+}
+
+
+
+
+.sub-menu{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+   
+   
+}
+.sub-menu li{
+    color:var(--main-bg-color);
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 0;
+}
+
+.content-filter{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-filter ul li{
+    display: inline;
+    color: var(--main-bg-color);
+}
