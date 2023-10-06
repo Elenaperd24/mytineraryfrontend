@@ -1,68 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Rajdhani:wght@300&display=swap');
+
 element {
-    --main-bg-color: #10004f;
+    --main-bg-color: #fc94b1;
 
-  }
-  :root {
+
+}
+
+:root {
     --main-font-family: 'Open Sans', sans-serif;
+    --main-font-color: #10004f;
 
-  }
-.contentHero{
+}
+
+.contentHero {
     position: relative;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-   
+    /* height: 100vh; */
+    /* background-color: #10004f; */
+
 }
 
-.bannerHome{
-   display: flex;
-   justify-content: center;   
-   position: relative;
-   top: 0;
+.bannerHome {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
 }
 
-.bannerHome img{
-    border-bottom-right-radius:10px ;
-    border-bottom-left-radius:10px ;
+.bannerHome img {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 
-.text-banner{
+.text-banner {
     position: absolute;
-    top:0;     
-    font-family:var(--main-font-family);
+    top: 0;
+    font-family: var(--main-font-family);
     width: 60%;
     left: 20px;
     top: 30px;
-   
+    color: var(--main-font-color);
 }
 
 
-
-
-.sub-menu{
+.sub-menu {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 20px;
-   
-   
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
 }
-.sub-menu li{
-    color:var(--main-bg-color);
+
+.sub-menu li {
+    color: var(--main-font-color);
     background-color: white;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     margin-bottom: 0;
 }
 
-.content-filter{
+.content-filter {
+    position: relative;
+    bottom: 30px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+
+
+
 }
 
-.content-filter ul li{
-    display: inline;
-    color: var(--main-bg-color);
+.child-filter-content {
+    width: 90%;
+    border-top-right-radius: 8px;
+    position: relative;
+    left: 20px;
+    background-color: white;
+    color: var(--main-font-family);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
 }
+
+.input-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-field {
+    border-color: #e8114b;
+}
+
+.child-filter-content button {
+    background-color: #e8114b;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 30px;
+    color: white;
+}
+
+
+

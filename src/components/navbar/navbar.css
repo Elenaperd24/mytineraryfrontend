@@ -1,5 +1,12 @@
+element {
+    --main-bg-color: #fc94b1;
+    --main-font-color:#10004f;
+
+  }
+
+
 nav{
-    background-color: #10004f;
+    background-color: #fc94b1;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -19,7 +26,7 @@ margin: 0px;
 }
 ul li {
    display: inline-block;
-    color: white;
+    color: var(--main-font-color);
     padding: 8px 10px;    
     margin: 5px;
 }
