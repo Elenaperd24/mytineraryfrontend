@@ -7,6 +7,7 @@ import axios from 'axios'
 import swal from 'sweetalert'
 import "./navbar.css"
 import { _url } from "../envairoment";
+import { Link } from "react-router-dom";
 
 
 
@@ -47,15 +48,29 @@ function Navbar() {
                     <img className="w-14 sm:hidden " src='https://icon-library.com/images/hamburger-menu-icon-white/hamburger-menu-icon-white-18.jpg' />
                 </button>
                 <ul className="hidden sm:flex justify-around items-center">
-                    <li className="sm:block hidden">Home</li>
-                    <li className="sm:block hidden">Cities</li>
-                    <li className="sm:block hidden">Signin</li>
+                    <LinkRouter to="/">
+                        <li className="sm:block hidden">Home</li>
+                    </LinkRouter>
+                    <LinkRouter to="/cities">
+                        <li className="sm:block hidden">Cities</li>
+                    </LinkRouter>
+                    <LinkRouter to="/signin">
+                        <li className="sm:block hidden">Signin</li>
+                    </LinkRouter>
+
                 </ul>
             </nav>
             <ul className={`navbar-main flex sm:hidden ${hideButton ? "hidden" : "flex"} justify-around items-center`}>
-                <li className="">Home</li>
-                <li className=" ">Cities</li>
-                <li className=" ">Signin</li>
+                <LinkRouter to="/">
+
+                    <li className="">Home</li>
+                </LinkRouter>
+                <LinkRouter to="/cities">
+                    <li className=" ">Cities</li>
+                </LinkRouter>
+                <LinkRouter to="/signin">
+                    <li className=" ">Signin</li>
+                </LinkRouter>
             </ul>
 
         </>

@@ -8,15 +8,7 @@
 
 }
 
-.contentHero {
-    /* position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; */
-    /* height: 100vh; */
-    /* background-color: #10004f; */
 
-}
 
 .bannerHome {
     display: flex;
@@ -42,15 +34,7 @@
 }
 
 
-.sub-menu {
-    /* position: absolute;
-    bottom: 30px;
-    left: 20px;
-    background-color: white;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px; */
 
-}
 
 .sub-menu li {
     color: var(--main-font-color);
@@ -71,18 +55,7 @@
 
 }
 
-.child-filter-content {
-    /* width: 95%; */
-    /* border-top-right-radius: 8px;
-    position: relative;
-    left: 20px;
-    background-color: white;
-    color: var(--main-font-family);
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding-bottom: 20px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px */
-}
+
 
 .input-filter {
     display: flex;
@@ -150,11 +123,6 @@
 
 }
 
-.cards-pagination-container {
-    /* display: flex;
-    justify-content: space-between; */
-
-}
 
 .card-pagination {
     font-family: var(--main-font-family);
@@ -206,14 +174,9 @@
 
 }
 
-.title-body p {
- 
-}
+
 
 .card-pagination :hover {
     transform: rotate(0, 0, 10);
 }
 
-.container-footer{
-    
-}

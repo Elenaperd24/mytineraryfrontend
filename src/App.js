@@ -6,9 +6,14 @@ import { useStateValue } from './StateProvide';
 import './App.css';
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/Footer"
+
 import axios from 'axios'
 import swal from 'sweetalert'
 import { _url } from './components/envairoment';
+import Cities from './components/cities/Cities';
+import Signin from './components/signin/Signin';
+import City from './components/city/City'
+
 
 //import components 
 import Home from './components/home/Home';
@@ -45,7 +50,7 @@ function App() {
               user: user.data
             })
           }
-          else {            
+          else {
             localStorage.removeItem("token")
           }
         }
@@ -66,11 +71,11 @@ function App() {
     <HashRouter>
       <Navbar />
       <Routes>
-     <Route path="/" element={<Home />} />
-        {/*    <Route path="/cities" element={<Cities />} />
-        <Route path="/city/:id" element={<City />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cities" element={<Cities />} />
         <Route path="/signin" element={<Signin />} />
-        <Route path="/singup" element={<SignUp />} />
+         <Route path="/city/:id" element={<City />} />        
+      {/* <Route path="/singup" element={<SignUp />} />
         <Route path="*" element={<Home />} /> */}
 
       </Routes>

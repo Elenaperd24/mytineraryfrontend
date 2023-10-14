@@ -48,56 +48,30 @@ function Home() {
                 </div>
 
                 {/* banner */}
-                <img className="realative top-0" width={"100%"} src={process.env.PUBLIC_URL + `/image/home/bannerHome.jpg`} />
-
+                <img className="realative top-0 rounded-lg" width={"100%"} src={process.env.PUBLIC_URL + `/image/home/bannerHome.jpg`} />
 
             </div>
 
-            {/* aditional information */}
-            <div className=" container mx-auto relative p-0 mr-auto ml-auto w-4/6  -top-6 md:-top-20 sm:-top-8 md:w-9/12">
-                <div className="flex flex-col w-full rounded-b-lg ">
-                    <div className="rounded-t-lg bg-white md:w-1/3">
-                        <ul className="flex justify-center	 md:justify-start" >
-                            <li>Explore</li>
 
-                            <li>Discover</li>
-
-                            <li>Coment</li>
-                        </ul>
-                    </div>
-                    <div className="w-full bg-white rounded-tr-lg " >
-                    
-                            <div className="rounded-b-lg py-3.5 mb-3 shadow-md container mx-auto flex flex-col items-center sm:flex sm:flex-row items-center sm:justify-between">
-                                <TextField className="text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="Continent" variant="outlined" />
-                                <TextField className="text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="Country" variant="outlined" />
-                                <TextField className="text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="City" variant="outlined" />
-                                <div>
-                                <button className="bg-pink-500 px-6  rounded-lg py-0.5 w-52 sm:w-full lg:w-28 md:w-32	h-11">Search</button>
-                                </div>
-                           
-                            </div>                          
-                      
-
-                    </div>
-                </div>
-            </div>
 
             {/* END HEADER */}
 
-            <div className="container mx-auto  md:flex md:flex-row md:justify-evenly md:items-center sm:flex sm:flex-col sm:items-center sm:hover:none sm:mb-1 ">
-                <div className="info-card md:w-52 mb-2	 sm:w-9/12">
-                    <p>The best prices</p>
-                    <AttachMoneyIcon className='icon-card' fontSize="medium" />
-                </div>
-                <div className="info-card mb-2 md:w-52	 sm:w-9/12">
-                    <p>The best memories</p>
-                    <RememberMeIcon className='icon-card' fontSize="medium" />
-                </div>
-                <div className="info-card mb-2 md:w-52	 sm:w-9/12">
-                    <p>The best destinations</p>
-                    <AirplanemodeActiveIcon className='icon-card' fontSize="medium" />
-                </div>
+            <div className=" bg-white rounded-lg shadow-md	container mx-auto relative p-8 mr-auto ml-auto w-4/6  -top-6 md:-top-20 sm:-top-8 md:w-9/12" >
+                <div className="container mx-auto  md:flex md:flex-row md:justify-evenly md:items-center sm:flex sm:flex-col sm:items-center sm:hover:none sm:mb-1 ">
+                    <div className="info-card md:w-52 mb-2	 sm:w-9/12">
+                        <p>The best prices</p>
+                        <AttachMoneyIcon className='icon-card' fontSize="medium" />
+                    </div>
+                    <div className="info-card mb-2 md:w-52	 sm:w-9/12">
+                        <p>The best memories</p>
+                        <RememberMeIcon className='icon-card' fontSize="medium" />
+                    </div>
+                    <div className="info-card mb-2 md:w-52	 sm:w-9/12">
+                        <p>The best destinations</p>
+                        <AirplanemodeActiveIcon className='icon-card' fontSize="medium" />
+                    </div>
 
+                </div>
             </div>
 
 
