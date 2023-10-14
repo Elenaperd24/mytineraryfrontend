@@ -1,22 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Rajdhani:wght@300&display=swap');
 
-element {
+:root {
+    --main-font-family: 'Open Sans', sans-serif;
+    --main-font-color: #10004f;
     --main-bg-color: #fc94b1;
 
 
 }
 
-:root {
-    --main-font-family: 'Open Sans', sans-serif;
-    --main-font-color: #10004f;
-
-}
-
 .contentHero {
-    position: relative;
+    /* position: relative;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     /* height: 100vh; */
     /* background-color: #10004f; */
 
@@ -47,12 +43,12 @@ element {
 
 
 .sub-menu {
-    position: absolute;
+    /* position: absolute;
     bottom: 30px;
     left: 20px;
     background-color: white;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-right-radius: 8px; */
 
 }
 
@@ -76,8 +72,8 @@ element {
 }
 
 .child-filter-content {
-    width: 90%;
-    border-top-right-radius: 8px;
+    /* width: 95%; */
+    /* border-top-right-radius: 8px;
     position: relative;
     left: 20px;
     background-color: white;
@@ -85,7 +81,7 @@ element {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding-bottom: 20px;
     border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px
+    border-bottom-right-radius: 8px */
 }
 
 .input-filter {
@@ -106,5 +102,118 @@ element {
     color: white;
 }
 
+.cards-information {
+    /* background-color: #e8114b; */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.info-card {
+    height: 70px;
+    /* width: 200px; */
+    color: var(--main-font-family);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid gray 0.5px;
+    border-radius: 8px;
+}
+
+.info-card p {
+    margin-bottom: 0;
+}
+
+.icon-card {
+    background-color: #eeedf9;
+    border-radius: 100px;
+    padding: 2px;
+}
 
 
+
+/* pagination */
+
+
+.pagination {
+    position: relative;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.cards-pagination-container {
+    /* display: flex;
+    justify-content: space-between; */
+
+}
+
+.card-pagination {
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+}
+
+.aaaaaaaaaaaaaa{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contPagination {
+    display: flex;
+    justify-content: center;
+}
+
+.title-body {
+    width: 90%;
+    margin-left: auto;
+    margin-left: auto;
+    text-align: left;
+    font-family: var(--main-font-family);
+
+}
+.aditional{
+    /* border:solid; */
+    border-color: #10004f;
+    color: white;
+}
+
+.child-aditional{
+    /* border:solid 8px; */
+    border-color: red;
+    
+    color: white;
+}
+
+.text-small-title{
+    font-size: 10px;
+}
+
+.inputs-cont {
+    /* border:solid 8px; */
+    border-color: pink;
+}
+
+.title-body h3 {
+    color: var( --main-font-color);
+
+}
+
+.title-body p {
+ 
+}
+
+.card-pagination :hover {
+    transform: rotate(0, 0, 10);
+}
+
+.container-footer{
+    
+}

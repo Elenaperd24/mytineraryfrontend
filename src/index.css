@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-footer{
+    background-color:  #fc94b1;
+    color: #10004f
+}

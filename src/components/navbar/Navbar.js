@@ -12,12 +12,13 @@ import { _url } from "../envairoment";
 
 
 function Navbar() {
-    
- 
+
+
     const [{ user }, dispatch] = useStateValue()
+    const [hideButton, sethideButton] = React.useState(true)
     async function cerrarSesion() {
         const email = user.datosUser.email
-        await axios.post(`${_url}/api/signout", ${ email }`)
+        await axios.post(`${_url}/api/signout", ${email}`)
             .then(response => {
                 if (response.data.success) {
                     swal({
@@ -34,21 +35,29 @@ function Navbar() {
             })
     }
 
-   
+    const handleButton = () => {
+        sethideButton(!hideButton)
+    }
+
     return (
         <>
-        <nav className="navbar-main">
-            <img className="logo" src="https://s.latamairlines.com/icons/design-system/logos/panamericanos2023.svg"/>
-            <ul>
-             
-                <li>Home</li>
-                <li>Cities</li>               
-                <li>Signin</li>
+            <nav className="navbar-main flex justify-around items-center sm:flex sm:justify-around sm:items-center  ">
+                <img className="logo" src="https://s.latamairlines.com/icons/design-system/logos/panamericanos2023.svg" />
+                <button onClick={handleButton}>
+                    <img className="w-14 sm:hidden " src='https://icon-library.com/images/hamburger-menu-icon-white/hamburger-menu-icon-white-18.jpg' />
+                </button>
+                <ul className="hidden sm:flex justify-around items-center">
+                    <li className="sm:block hidden">Home</li>
+                    <li className="sm:block hidden">Cities</li>
+                    <li className="sm:block hidden">Signin</li>
+                </ul>
+            </nav>
+            <ul className={`navbar-main flex sm:hidden ${hideButton ? "hidden" : "flex"} justify-around items-center`}>
+                <li className="">Home</li>
+                <li className=" ">Cities</li>
+                <li className=" ">Signin</li>
             </ul>
 
-            
-        </nav>
-           
         </>
     )
 

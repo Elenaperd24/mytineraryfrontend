@@ -16,7 +16,7 @@ function Home() {
             <h1 className="d-flex txt-more-like">Most popular cities**</h1>
             <CitiesLike cities={cities}/>
             <h1 className="d-flex txt-more-like">Let's Travel The World</h1>
-            <Carouselhome cities={cities}/>          
+            {/* <Carouselhome cities={cities}/>           */}
         </div>
 
     )

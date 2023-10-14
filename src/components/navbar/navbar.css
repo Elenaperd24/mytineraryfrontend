@@ -5,13 +5,13 @@ element {
   }
 
 
-nav{
+  .navbar-main{
     background-color: #fc94b1;
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     /* height: 45px; */
-    
+   
 }
 
 .logo{
