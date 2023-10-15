@@ -34,7 +34,7 @@ function Home() {
 
     const [{ cities }, dispatch] = useStateValue()
     let morePopulation = cities.filter(city => city.population < 35)
-
+  
     return (
 
         <>

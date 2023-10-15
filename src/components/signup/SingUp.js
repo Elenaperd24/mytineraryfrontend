@@ -18,7 +18,7 @@ function SignUp() {
 
 
     const responseGoogle = async (response) => {
-        console.log(response)
+   
         const NuevoUsuario = {
             img: response.profileObj.imageUrl,
             name: response.profileObj.givenName,
@@ -31,8 +31,7 @@ function SignUp() {
     }
 
 /*     const responseFacebook = async (response) => {
-        console.log(response)
-        const NuevoUsuario = {
+          const NuevoUsuario = {
             img: response.picture.data.url,
             name: response.name,
             lastName: response.lastName,
@@ -62,7 +61,7 @@ function SignUp() {
             .then(response => {
                 if (response.data.success === "falseVAL") {
                     let detailsError = response.data.response.error.details
-                    console.log(detailsError)
+                )
                     detailsError.map(error =>
                         swal({
                             title: " error",
@@ -72,7 +71,7 @@ function SignUp() {
                         }))
                 }
                 else if (response.data.success === true) {
-                    console.log(response.data);
+              
                     swal({
                         title: " Login...",
                         icon: "success",
@@ -81,7 +80,7 @@ function SignUp() {
                     })
                 }
                 else {
-                    console.log(response.data)
+                    
                     swal({
                         title: response.data.response,
                         icon: "warning",

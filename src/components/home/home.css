@@ -140,12 +140,20 @@
 }
 
 .title-body {
-    width: 90%;
+    position: relative;
+   left: 20px;
     margin-left: auto;
     margin-left: auto;
     text-align: left;
     font-family: var(--main-font-family);
 
+}
+
+.textCity{
+    margin-left: auto;
+    margin-left: auto;
+    text-align: left;
+    font-family: var(--main-font-family);
 }
 .aditional{
     /* border:solid; */

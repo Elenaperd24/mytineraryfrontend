@@ -11,7 +11,7 @@ export default function PaginationCities(props) {
 
 //  
 const cities = props.props
-console.log(props)
+console.log(cities)
   const [page, setPage] = React.useState(cities.slice(0, 3))
 
   const [numPage, setNumPage] = React.useState(1)
