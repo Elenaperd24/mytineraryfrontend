@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link as LinkRouter } from "react-router-dom";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 
 import swal from 'sweetalert'
@@ -28,11 +28,10 @@ function Signin() {
         detectFrom(UserData)
     }
 
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
-    const backPage = () =>{
-        alert("calling back")
-        navigate(-1)
+    const backPage = () => {
+        navigate("/")
     }
 
 
@@ -73,29 +72,32 @@ function Signin() {
                     type: accionType.USERDB,
                     user: response.data.response
                 })
-               // backPage()
+                backPage()
             })
     }
     return (
         <>
-           {!user?
-                <div className="bg-sky-950	">
-                    <br />
-                    <form onSubmit={signinUser} className="bg-white flex shadow-md rounded-md p-4 flex-col w-4/5 mr-auto ml-auto h-96	sm:w-3/6		md:w-1/5	justify-around	">
-                        <div className="flex justify-center w-full">
-                            <PersonIcon fontSize={"large"} />
 
-                        </div>
-                        <input className="border-solid	border-slate-300 border-2 rounded-md	" type="email" placeholder="Email" />
-                        <input className="border-solid	border-slate-300 border-2 rounded-md	" type="password" placeholder="Password" />
+            <div className="bg-sky-950	">
+                <br />
+                <form onSubmit={signinUser} className="bg-white flex shadow-md rounded-md p-4 flex-col w-4/5 mr-auto ml-auto h-96	sm:w-3/6		md:w-1/5	justify-around	">
+                    <div className="flex justify-center w-full">
+                        <PersonIcon fontSize={"large"} />
 
-                        <button className="bg-pink-500  text-white border-2 rounded-md" type=" submit">Log In</button>
-                        <br />
-                        <p>Don't have an account? </p> <LinkRouter to='/singup'>SignUp</LinkRouter>
-                    </form>
-                    <br />
-                </div> :   ()=> navigate('/')
-}
+                    </div>
+                    <input className="border-solid	border-slate-300 border-2 rounded-md	" type="email" placeholder="Email" />
+                    <input className="border-solid	border-slate-300 border-2 rounded-md	" type="password" placeholder="Password" />
+
+                    <button className="bg-pink-500  text-white border-2 rounded-md" type=" submit">Log In</button>
+
+                    <p className="text-center">Don't have an account? </p>
+                    <LinkRouter className="text-center" to='/singup'>
+                        <p className="underline	decoration-slate-50 text-cyan-500">SignUp</p>
+                    </LinkRouter>
+                </form>
+                <br />
+            </div>
+
 
 
         </>

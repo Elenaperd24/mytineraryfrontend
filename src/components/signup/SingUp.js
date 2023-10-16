@@ -115,11 +115,15 @@ function SignUp() {
                         <PersonIcon fontSize={"large"} />
 
                     </div>
-                    <input className="border-solid	border-slate-300 border-2 rounded-md" type="name" placeholder="Email" />
+                    <input className="border-solid	border-slate-300 border-2 rounded-md" type="name" placeholder="Name" />
                     <input className="border-solid	border-slate-300 border-2 rounded-md" type="name" placeholder="Last Name" />
                     <input className="border-solid	border-slate-300 border-2 rounded-md" type="email" placeholder="Email" />
                     <input className="border-solid	border-slate-300 border-2 rounded-md" type="password" placeholder="Password" />
                     <button className="bg-pink-500  text-white border-2 rounded-md" type=" submit">Submit</button>
+                    {/* <p className="text-center">Go back Log In</p> */}
+                    <LinkRouter className="text-center" to='/signin'>
+                        <p className="underline	decoration-slate-50 text-cyan-500">Sign In</p>
+                    </LinkRouter>
                 </form>
                 <br />
             </div>
