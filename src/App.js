@@ -4,17 +4,19 @@ import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom"
 import { accionType } from './reducer';
 import { useStateValue } from './StateProvide';
 import './App.css';
-import Navbar from "./components/Navbar"
-import Home from "./components/Home"
+import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/Footer"
-import City from './components/City';
-import SignUp from './components/SingUp';
-import Signin from './components/Signin';
+
 import axios from 'axios'
-import Cities from "./components/Cities";
 import swal from 'sweetalert'
-import SigninPrueba from './components/Signinprueba';
 import { _url } from './components/envairoment';
+import Cities from './components/cities/Cities';
+import Signin from './components/signin/Signin';
+import City from './components/city/City'
+
+
+//import components 
+import Home from './components/home/Home';
 
 function App() {
   const [{ cities }, dispatch] = useStateValue()
@@ -26,7 +28,9 @@ function App() {
         dispatch({
           type: accionType.CITIESDB,
           cities: response.data.response.cities
-        })
+        })       
+
+   
       })
 
     if (localStorage.getItem("token") !== null) {
@@ -48,7 +52,7 @@ function App() {
               user: user.data
             })
           }
-          else {            
+          else {
             localStorage.removeItem("token")
           }
         }
@@ -63,19 +67,19 @@ function App() {
   /*      const dataItinerary = []                modo de consumir la data por axios no por dispatch
         axios.get("https://mytinerary-elena.herokuapp.com/api/infoitinerary")
           .then(response => dataItinerary.push(...response.data.response.itinerary))
-          console.log(dataItinerary); */
+       ; */
 
   return (
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/cities" element={<Cities />} />
-        <Route path="/city/:id" element={<City />} />
         <Route path="/signin" element={<Signin />} />
-        <Route path="/singup" element={<SignUp />} />
-        <Route path="*" element={<Home />} />
-        <Route path="/prueba" element={<SigninPrueba />} />
+         <Route path="/city/:id" element={<City />} />        
+      {/* <Route path="/singup" element={<SignUp />} />*/}
+       
+
       </Routes>
       <Footer />
     </HashRouter>

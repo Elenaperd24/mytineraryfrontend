@@ -1,0 +1,33 @@
+element {
+    --main-bg-color: #fc94b1;
+    --main-font-color:#10004f;
+
+  }
+
+
+  .navbar-main{
+    background-color: #fc94b1;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    /* height: 45px; */
+   
+}
+
+.logo{
+    width: 150px;
+    height: 30px;
+}
+
+ul{
+padding: 0px;
+margin: 0px;
+
+}
+ul li {
+   display: inline-block;
+    color: var(--main-font-color);
+    padding: 8px 10px;    
+    margin: 5px;
+}
+

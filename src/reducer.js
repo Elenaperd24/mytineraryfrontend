@@ -2,20 +2,23 @@ export const initialState = { // crear estados
     cities: [], //estado inicial de cities
     citiesNew: [],
     user: null,
+    itineraries:[]
    
 }
 
 export const accionType = { // mis accioness
     CITIESDB: "CITIESDB",
     USERDB: "USERDB",
-    FILTER: "FILTER"
+    FILTER: "FILTER",
+    ITINIERARIES: "ITINIERARIES"
 
 }
 
 const reducer = (state, action) => {
-    //console.log(action); 
+
     switch (action.type) {
         case "CITIESDB":
+           
             return {
                 ...state,
                 cities: action.cities,
@@ -31,9 +34,17 @@ const reducer = (state, action) => {
                         ...state,
                         citiesNew: action.citiesNew
                     }
+                    case "ITINIERARIES":
+                       
+                        return {
+                            ...state,
+                            itineraries: action.itineraries
+                        }
                                     
         default: return state
     }
+
+   
 }
 
 export default reducer;
