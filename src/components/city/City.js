@@ -15,9 +15,7 @@ function City() {
     let city = cities.filter(item => item._id === id)
     let namecity = city.map(item => item.name)
 
- 
 
-    console.log(itineraries)
 
     return (
         <>
@@ -53,7 +51,7 @@ function City() {
                                     <img className="w-8" src={`${item.flag}`} />
 
                                 </div>
-                                <div className="textCity info-card flex flex-col mb-2 sm:w-52 sm:flex sm:flex-row m:w-9/12">
+                                <div className="textCity info-card flex flex-col mb-2 md:w-52 sm:flex sm:flex-row  sm:w-9/12">
                                     <p>Start Week: {item.starWeek}</p>
                                     <img className="w-8" src={`${item.flag}`} />
                                 </div>
@@ -61,13 +59,13 @@ function City() {
                             </div>
                         </div>
                         <div className="w-4/5 mr-auto ml-auto grid grid-cols-1 gap-4">
-                           
-                                    <CardItineraries name={item.name} />
-                                
-                       
+
+                            <CardItineraries name={item.name} />
+
+
                         </div>
 
-                            <br />
+                        <br />
 
                     </>
                 )

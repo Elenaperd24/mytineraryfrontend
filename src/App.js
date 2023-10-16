@@ -13,6 +13,7 @@ import { _url } from './components/envairoment';
 import Cities from './components/cities/Cities';
 import Signin from './components/signin/Signin';
 import City from './components/city/City'
+import SignUp from './components/signup/SingUp';
 
 
 //import components 
@@ -77,7 +78,7 @@ function App() {
         <Route path="/cities" element={<Cities />} />
         <Route path="/signin" element={<Signin />} />
          <Route path="/city/:id" element={<City />} />        
-      {/* <Route path="/singup" element={<SignUp />} />*/}
+      <Route path="/singup" element={<SignUp />} />
        
 
       </Routes>

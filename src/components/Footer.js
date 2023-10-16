@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer>
+        <footer className="relative bottom-0">
             <div className=" container-footer md:flex md:flex-row md:items-center md:justify-around md:h-64 md:m-0: sm:h-96 sm:flex sm:flex-col" >
             <br />
                 <div className="inline-block" > 
