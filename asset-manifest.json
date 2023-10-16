@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/_mytineraryfrontend/static/css/main.0dc3ea3e.css",
-    "main.js": "/_mytineraryfrontend/static/js/main.09fedc55.js",
+    "main.js": "/_mytineraryfrontend/static/js/main.a37b1074.js",
     "static/js/787.847747be.chunk.js": "/_mytineraryfrontend/static/js/787.847747be.chunk.js",
     "index.html": "/_mytineraryfrontend/index.html",
     "main.0dc3ea3e.css.map": "/_mytineraryfrontend/static/css/main.0dc3ea3e.css.map",
-    "main.09fedc55.js.map": "/_mytineraryfrontend/static/js/main.09fedc55.js.map",
+    "main.a37b1074.js.map": "/_mytineraryfrontend/static/js/main.a37b1074.js.map",
     "787.847747be.chunk.js.map": "/_mytineraryfrontend/static/js/787.847747be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0dc3ea3e.css",
-    "static/js/main.09fedc55.js"
+    "static/js/main.a37b1074.js"
   ]
 }
