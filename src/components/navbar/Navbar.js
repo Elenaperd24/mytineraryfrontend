@@ -9,6 +9,7 @@ import "./navbar.css"
 import { _url } from "../envairoment";
 import { Link } from "react-router-dom";
 import LogoutIcon from '@mui/icons-material/Logout';
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 
@@ -48,8 +49,9 @@ function Navbar() {
         <>
             <nav className="navbar-main flex justify-around items-center sm:flex sm:justify-around sm:items-center  ">
                 <img className="logo" src="https://s.latamairlines.com/icons/design-system/logos/panamericanos2023.svg" />
-                <button onClick={handleButton}>
-                    <img className="w-14 sm:hidden " src='https://icon-library.com/images/hamburger-menu-icon-white/hamburger-menu-icon-white-18.jpg' />
+                <button className="p-2" onClick={handleButton}>                   
+                   <MenuIcon />
+                    {/* <img className="w-14 sm:hidden " src='https://icon-library.com/images/hamburger-menu-icon-white/hamburger-menu-icon-white-18.jpg' /> */}
                 </button>
                 <ul className="hidden sm:flex justify-around items-center">
                     <LinkRouter to="/">

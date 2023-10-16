@@ -91,7 +91,7 @@ function Cities() {
                             <TextField onChange={handleCountry} className="text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="Country" variant="outlined" />
                             <TextField onChange={handleCity} className="city text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="City" variant="outlined" />
                             <div>
-                                <button className="bg-pink-500 px-6  rounded-lg py-0.5 w-52 sm:w-full lg:w-28 md:w-32	h-11">Search</button>
+                                {/* <button className="bg-pink-500 px-6  rounded-lg py-0.5 w-52 sm:w-full lg:w-28 md:w-32	h-11">Search</button> */}
                             </div>
 
                         </div>
