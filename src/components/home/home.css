@@ -115,8 +115,8 @@
 .pagination {
     position: relative;
     display: flex;
-    flex-direction: column;   
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -129,7 +129,7 @@
     color: var(--main-font-color);
 }
 
-.aaaaaaaaaaaaaa{
+.aaaaaaaaaaaaaa {
     margin-left: auto;
     margin-right: auto;
 }
@@ -140,7 +140,7 @@
 }
 
 .title-body {
-   width: 90%;
+    width: 90%;
     margin-left: auto;
     margin-left: auto;
     text-align: left;
@@ -148,26 +148,27 @@
 
 }
 
-.textCity{
+.textCity {
     margin-left: auto;
     margin-left: auto;
     text-align: left;
     font-family: var(--main-font-family);
 }
-.aditional{
+
+.aditional {
     /* border:solid; */
     border-color: #10004f;
     color: white;
 }
 
-.child-aditional{
+.child-aditional {
     /* border:solid 8px; */
     border-color: red;
-    
+
     color: white;
 }
 
-.text-small-title{
+.text-small-title {
     font-size: 10px;
 }
 
@@ -177,7 +178,7 @@
 }
 
 .title-body h3 {
-    color: var( --main-font-color);
+    color: var(--main-font-color);
 
 }
 
@@ -186,4 +187,3 @@
 .card-pagination :hover {
     transform: rotate(0, 0, 10);
 }
-
