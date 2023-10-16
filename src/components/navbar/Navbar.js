@@ -49,7 +49,7 @@ function Navbar() {
         <>
             <nav className="navbar-main flex justify-around items-center sm:flex sm:justify-around sm:items-center  ">
                 <img className="logo" src="https://s.latamairlines.com/icons/design-system/logos/panamericanos2023.svg" />
-                <button className="p-2" onClick={handleButton}>                   
+                <button className="p-2 w-14 sm:hidden" onClick={handleButton}>                   
                    <MenuIcon />
                     {/* <img className="w-14 sm:hidden " src='https://icon-library.com/images/hamburger-menu-icon-white/hamburger-menu-icon-white-18.jpg' /> */}
                 </button>

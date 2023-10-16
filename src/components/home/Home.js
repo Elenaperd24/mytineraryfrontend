@@ -84,7 +84,7 @@ function Home() {
 
             <br />
 
-            <div className="text-theme">
+            <div className="title-body ">
                 <h3 className="text-2xl">Most Popular Cities</h3>
                 <span><p>Enjoy - Travel - Explore</p></span>
             </div>
