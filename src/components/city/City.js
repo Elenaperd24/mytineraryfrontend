@@ -60,7 +60,7 @@ function City() {
                                     <img className="w-8" src={`${item.flag}`} />
 
                                 </div>
-                                <div className=" textCity info-card flex flex-col mb-2 sm:w-52 sm:flex sm:flex-row sm:w-9/12">
+                                <div className="textCity info-card flex flex-col mb-2 md:w-52 sm:flex sm:flex-row  sm:w-9/12">
                                     <p>Languages: {item.languages}</p>
                                     <img className="w-8" src={`${item.flag}`} />
 
