@@ -14,6 +14,13 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import AddCommentIcon from '@mui/icons-material/AddComment';
 
+import { _url } from '../envairoment';
+import { useStateValue } from "../../StateProvide";
+import { useEffect } from 'react';
+import axios from "axios";
+import { accionType } from '../../reducer';
+import CardComments from './CardComments';
+
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -28,8 +35,20 @@ const ExpandMore = styled((props) => {
 export default function CardItineraries(props) {
     const [expanded, setExpanded] = React.useState(false);
 
-    let itinerary = props.item
-    console.log(itinerary.nroItinerario)
+    const [itineraries, setItineraries] =React.useState()
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        axios.get(`${_url}api/infoitinerary/${props.name}`)
+            .then(response => {              
+
+               setItineraries(response.data.response.itinerary)
+            })
+
+
+    }, [])
+
+
 
 
     const handleExpandClick = () => {
@@ -37,49 +56,52 @@ export default function CardItineraries(props) {
     };
 
     return (
-        <Card sx={{ maxWidth: "100%" }}>
-            <CardHeader
+        <>
+            {itineraries?.map(itinerary => {
+                return (
+                    <Card sx={{ maxWidth: "100%" }}>
+                        <CardHeader
 
 
-                title={`${itinerary.name}`}
-                subheader={`${itinerary.costo} $USD`}
-            />
-            <CardMedia
-                component="img"
-                height="194"
-                image={process.env.PUBLIC_URL + `/image/itinerary/itinerary${itinerary.nroItinerario}/place2.jpg`}
-                alt={itinerary.actividades.activity1.name}
-            />
-            <CardContent>
-                <Typography className="text-lg" color="text.secondary">
-                    {itinerary.actividades.activity1.name}
-                </Typography>
-                <Typography className="text-lg" color="text.secondary">
-                    {itinerary.actividades.activity2.name}
-                </Typography>
-                <Typography className="text-lg" color="text.secondary">
-                    {itinerary.actividades.activity3.name}
-                </Typography>
+                            title={`${itinerary.name}`}
+                            subheader={`${itinerary.costo} $USD`}
+                        />
+                        <CardMedia
+                            component="img"
+                            height="194"
+                            image={process.env.PUBLIC_URL + `/image/itinerary/itinerary${itinerary.nroItinerario}/place2.jpg`}
+                            alt={itinerary.actividades.activity1.name}
+                        />
+                        <CardContent>
+                            <Typography className="text-lg" color="text.secondary">
+                                {itinerary.actividades.activity1.name}
+                            </Typography>
+                            <Typography className="text-lg" color="text.secondary">
+                                {itinerary.actividades.activity2.name}
+                            </Typography>
+                            <Typography className="text-lg" color="text.secondary">
+                                {itinerary.actividades.activity3.name}
+                            </Typography>
 
 
 
-            </CardContent>
-            <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
-                </IconButton>
-              
+                        </CardContent>
+                        <CardActions disableSpacing>
+                            <IconButton aria-label="add to favorites">
+                                <FavoriteIcon />
+                            </IconButton>
 
-                <ExpandMore
-                    expand={expanded}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                >
-                    <AddCommentIcon />
-                </ExpandMore>
-            </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
+
+                            <ExpandMore
+                                expand={expanded}
+                                onClick={handleExpandClick}
+                                aria-expanded={expanded}
+                                aria-label="show more"
+                            >
+                                <AddCommentIcon />
+                            </ExpandMore>
+                        </CardActions>
+                        {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography paragraph>Method:</Typography>
                     <Typography paragraph>
@@ -107,8 +129,12 @@ export default function CardItineraries(props) {
                         Set aside off of the heat to let rest for 10 minutes, and then serve.
                     </Typography>
                 </CardContent>
-            </Collapse>
+            </Collapse> */}
+                        <CardComments id={itinerary._id} />
 
-        </Card>
+                    </Card>
+                )
+            })}
+        </>
     );
 }

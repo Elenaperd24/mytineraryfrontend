@@ -8,18 +8,21 @@ import swal from 'sweetalert'
 import "./navbar.css"
 import { _url } from "../envairoment";
 import { Link } from "react-router-dom";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 
 
 
 function Navbar() {
-
+  
 
     const [{ user }, dispatch] = useStateValue()
     const [hideButton, sethideButton] = React.useState(true)
-    async function cerrarSesion() {
+    const [iconUser, setIconuser] = React.useState(user)
+
+    async function logOut() {
         const email = user.datosUser.email
-        await axios.post(`${_url}/api/signout", ${email}`)
+        await axios.post(`${_url}api/signout`, {email})
             .then(response => {
                 if (response.data.success) {
                     swal({
@@ -32,6 +35,7 @@ function Navbar() {
                         type: accionType.USERDB,
                         user: null
                     })
+                    setIconuser(user)
                 }
             })
     }
@@ -54,9 +58,10 @@ function Navbar() {
                     <LinkRouter to="/cities">
                         <li className="sm:block hidden">Cities</li>
                     </LinkRouter>
-                    <LinkRouter to="/signin">
+                    {user?<button onClick={logOut}><LogoutIcon size={'large'}/></button>:  <LinkRouter to="/signin">
                         <li className="sm:block hidden">Signin</li>
-                    </LinkRouter>
+                    </LinkRouter>}
+                  
 
                 </ul>
             </nav>

@@ -15,21 +15,7 @@ function City() {
     let city = cities.filter(item => item._id === id)
     let namecity = city.map(item => item.name)
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        axios.get(`${_url}api/infoitinerary/${namecity[0]}`)
-            .then(response => {
-                dispatch({
-                    type: accionType.ITINIERARIES,
-                    itineraries: response.data.response.itinerary
-                })
 
-            })
-
-
-    }, [])
-
-    console.log(itineraries)
 
     return (
         <>
@@ -65,7 +51,7 @@ function City() {
                                     <img className="w-8" src={`${item.flag}`} />
 
                                 </div>
-                                <div className="textCity info-card flex flex-col mb-2 sm:w-52 sm:flex sm:flex-row m:w-9/12">
+                                <div className="textCity info-card flex flex-col mb-2 md:w-52 sm:flex sm:flex-row  sm:w-9/12">
                                     <p>Start Week: {item.starWeek}</p>
                                     <img className="w-8" src={`${item.flag}`} />
                                 </div>
@@ -73,14 +59,13 @@ function City() {
                             </div>
                         </div>
                         <div className="w-4/5 mr-auto ml-auto grid grid-cols-1 gap-4">
-                            {itineraries.length > 0 ? itineraries.map(item => {
-                                return (
-                                    <CardItineraries item={item} />
-                                )
-                            }) : ""}
+
+                            <CardItineraries name={item.name} />
+
+
                         </div>
 
-                            <br />
+                        <br />
 
                     </>
                 )

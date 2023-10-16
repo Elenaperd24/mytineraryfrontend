@@ -5,6 +5,8 @@ import FacebookLogin from 'react-facebook-login';
 import swal from 'sweetalert'
 import axios from "axios";
 import { _url } from "../envairoment";
+import PersonIcon from '@mui/icons-material/Person';
+
 
 
 //<MaterialIcon className="icon-login" icon="account_circle" size='large' color="black" />//
@@ -13,12 +15,12 @@ import { _url } from "../envairoment";
 
 function SignUp() {
     useEffect(() => {
-        window.scrollTo(0, 0);       
+        window.scrollTo(0, 0);
     }, [])
 
 
     const responseGoogle = async (response) => {
-   
+
         const NuevoUsuario = {
             img: response.profileObj.imageUrl,
             name: response.profileObj.givenName,
@@ -30,17 +32,17 @@ function SignUp() {
         detectFrom(NuevoUsuario)
     }
 
-/*     const responseFacebook = async (response) => {
-          const NuevoUsuario = {
-            img: response.picture.data.url,
-            name: response.name,
-            lastName: response.lastName,
-            email: response.email,
-            password: response.id + "Ep",
-            from: "Facebook"
-        }
-        detectFrom(NuevoUsuario)
-    } */
+    /*     const responseFacebook = async (response) => {
+              const NuevoUsuario = {
+                img: response.picture.data.url,
+                name: response.name,
+                lastName: response.lastName,
+                email: response.email,
+                password: response.id + "Ep",
+                from: "Facebook"
+            }
+            detectFrom(NuevoUsuario)
+        } */
     async function newUser(event) {
         event.preventDefault()
         let name = event.target[0].value
@@ -54,14 +56,17 @@ function SignUp() {
             password: event.target[3].value,
             from: "MyTineray"
         }
+        console.log(NuevoUsuario)
         detectFrom(NuevoUsuario)
     }
+
+
     async function detectFrom(NuevoUsuario) {
-        await axios.post(`${_url}/api/signup", ${ NuevoUsuario }`)
+        await axios.post(`${_url}api/signup`, { NuevoUsuario })  
             .then(response => {
                 if (response.data.success === "falseVAL") {
                     let detailsError = response.data.response.error.details
-                )
+
                     detailsError.map(error =>
                         swal({
                             title: " error",
@@ -71,7 +76,7 @@ function SignUp() {
                         }))
                 }
                 else if (response.data.success === true) {
-              
+
                     swal({
                         title: " Login...",
                         icon: "success",
@@ -80,18 +85,45 @@ function SignUp() {
                     })
                 }
                 else {
-                    
+
                     swal({
                         title: response.data.response,
                         icon: "warning",
                         buttons: "ok"
                     })
                 }
-            })
+            }
+            )
+
+
+
+
+
+
+
     }
+
+
+
     return (
         <>
-           
+
+            <div className="bg-sky-950	">
+                <br />
+                <form onSubmit={newUser} className="bg-white flex shadow-md rounded-md p-4 flex-col w-4/5 mr-auto ml-auto h-96	sm:w-3/6		md:w-1/5	justify-around	">
+                    <div className="flex justify-center w-full">
+                        <PersonIcon fontSize={"large"} />
+
+                    </div>
+                    <input className="border-solid	border-slate-300 border-2 rounded-md" type="name" placeholder="Email" />
+                    <input className="border-solid	border-slate-300 border-2 rounded-md" type="name" placeholder="Last Name" />
+                    <input className="border-solid	border-slate-300 border-2 rounded-md" type="email" placeholder="Email" />
+                    <input className="border-solid	border-slate-300 border-2 rounded-md" type="password" placeholder="Password" />
+                    <button className="bg-pink-500  text-white border-2 rounded-md" type=" submit">Submit</button>
+                </form>
+                <br />
+            </div>
+
         </>
     )
 }
