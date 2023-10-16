@@ -40,8 +40,8 @@ function City() {
                         <div className=" bg-white rounded-lg shadow-md	container mx-auto relative p-8 mr-auto ml-auto w-4/6  -top-6 md:-top-20 sm:-top-8 md:w-9/12" >
                             <h1 className="textCity text-center pb-8 md:text-3xl sm:text-xl text-base	">{item.name} </h1>
 
-                            <div className="container mx-auto  md:flex md:flex-row md:justify-evenly md:items-center sm:flex sm:flex-col sm:items-center sm:hover:none sm:mb-1 ">
-                                <div className="textCity info-card flex flex-col mb-2 md:w-52 sm:flex sm:flex-row  sm:w-9/12">
+                            <div className="container items-center mx-auto  md:flex md:flex-row md:justify-evenly md:items-center sm:flex sm:flex-col sm:items-center sm:hover:none sm:mb-1 ">
+                                <div className="text-theme info-card flex flex-col mb-2 md:w-52 sm:flex sm:flex-row  sm:w-9/12">
                                     <p>Population: {item.population}</p>
                                     <img className="w-8" src={`${item.flag}`} />
 

@@ -8,7 +8,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function ActionAreaCard(item) {
   const city = item.item
-  
+  console.log(city)
   return (
     <Card className={`${item.class_style}`}>
       <CardActionArea>
@@ -31,14 +31,19 @@ export default function ActionAreaCard(item) {
         {
           item.class_style.includes("cities") ? <CardContent>
 
-            {/* <h3 className={`text-2xl ${item.class_style.includes("cities-page")?"absolute top-2/4 text-center	text-white	w-full":""}`}>
-              {city.name}
-            </h3> */}
-            {/* <Typography variant="body2"> */}
-            {!item.class_style.includes("call-page") ? <p>
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-            </p> : <></>}
+
+            {!item.class_style.includes("call-page") ?
+              <>
+              <div className='text-theme'>
+              <h2>{city.name}</h2>
+                <p className="line-clamp-6">
+                  <br/>
+                  {city.descripcion.main}
+                </p>
+                </div>
+              </> : <></>}
+
+
 
             {/* </Typography> */}
           </CardContent> : <h3 className={"text-2xl absolute bottom-0 text-center text-white mix-blend-screen	 bg-pink-400		 w-full hover:mix-blend-overlay"}>

@@ -22,8 +22,14 @@ module.exports = {
         "small":'8px',
       },
     
+      fontFamily: {
+    
+      },
     
   },
-  plugins: [],
+  plugins: [
+
+    require('@tailwindcss/line-clamp')
+  ],
 }
 

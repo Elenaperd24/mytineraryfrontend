@@ -1,23 +1,18 @@
 import React, { useEffect } from "react";
+import { Link as LinkRouter } from "react-router-dom";
+
 import { useStateValue } from "../../StateProvide";
-import CitiesLike from "./CitiesLike"
-import './home.css'
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import RememberMeIcon from '@mui/icons-material/RememberMe';
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+//components
 import PaginationCities from "./paginationCities";
 import ActionAreaCard from "./ActionAreaCard";
+
+import './home.css'
 
 function Home() {
     useEffect(() => {
@@ -89,7 +84,7 @@ function Home() {
 
             <br />
 
-            <div className="title-body">
+            <div className="text-theme">
                 <h3 className="text-2xl">Most Popular Cities</h3>
                 <span><p>Enjoy - Travel - Explore</p></span>
             </div>
@@ -98,7 +93,7 @@ function Home() {
             <div className="md:flex md:flex-row md:justify-center container mx-auto flex flex-col	items-center">
 
                 {cities.length > 0 ? morePopulation.map((item) => {
-                    return (<ActionAreaCard item={item} class_style={"max-w-xs hover:scale-125 inline-block"} />)
+                    return (<LinkRouter to={`/city/${item._id}`}><ActionAreaCard item={item} class_style={"max-w-xs hover:scale-125 inline-block"} /></LinkRouter>)
                 }) : ""}
 
             </div>

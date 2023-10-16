@@ -196,7 +196,7 @@ function CardComments(props) {
             <div className={comment?.length > 0 ? "comments shadow p-4 mt-2"  : "mt-2 commentsA p-4"}>
                 {comment?.map((item) => {
                     return (
-                        <Card className="w-11/12 mt-2	mr-auto ml-auto	">
+                        <Card className="w-11/12 mt-2 mr-auto ml-auto	">
                             <CardHeader
                                 avatar={
                                     <Avatar sx={{ bgcolor: red[500] }} /* aria-label="recipe" */>

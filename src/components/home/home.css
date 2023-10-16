@@ -10,6 +10,7 @@
 
 
 
+
 .bannerHome {
     display: flex;
     justify-content: center;
@@ -151,8 +152,13 @@
 .textCity {
     margin-left: auto;
     margin-left: auto;
-    text-align: left;
+    /* text-align: left; */
     font-family: var(--main-font-family);
+}
+
+.text-theme{
+    font-family: var(--main-font-family);
+    text-align: justify;
 }
 
 .aditional {

@@ -30,7 +30,7 @@ console.log(cities)
     <Stack spacing={2}>
       <div className=' md:flex md:flex-row md:justify-between sm:flex sm:flex-col sm:items-center sm:hover:none sm:mb-1 '>
         {page.map((item) => {
-          return <ActionAreaCard item={item} class_style={"cities max-w-xs hover:scale-110 "} />
+          return <ActionAreaCard item={item} class_style={"cities max-w-xs h-80	mb-4 "} />
         })}
 
       </div>
