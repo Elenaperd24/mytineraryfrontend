@@ -14,6 +14,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import AddCommentIcon from '@mui/icons-material/AddComment';
 
+import { _url } from '../envairoment';
+import { useStateValue } from "../../StateProvide";
+import { useEffect } from 'react';
+import axios from "axios";
+import { accionType } from '../../reducer';
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -27,9 +32,24 @@ const ExpandMore = styled((props) => {
 
 export default function CardItineraries(props) {
     const [expanded, setExpanded] = React.useState(false);
+    const [{ itineraries, comments }, dispatch] = useStateValue()
 
-    let itinerary = props.item
-    console.log(itinerary.nroItinerario)
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        axios.get(`${_url}api/infoitinerary/${props.name}`)
+            .then(response => {
+                dispatch({
+                    type: accionType.ITINIERARIES,
+                    itineraries: response.data.response.itinerary
+                })
+
+            })
+
+
+    }, [])
+
+
 
 
     const handleExpandClick = () => {
@@ -37,7 +57,10 @@ export default function CardItineraries(props) {
     };
 
     return (
-        <Card sx={{ maxWidth: "100%" }}>
+      <>
+      {itineraries?.map(itinerary=>{
+        return (
+            <Card sx={{ maxWidth: "100%" }}>
             <CardHeader
 
 
@@ -110,5 +133,8 @@ export default function CardItineraries(props) {
             </Collapse>
 
         </Card>
+        )
+      })}
+      </>
     );
 }
