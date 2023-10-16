@@ -28,7 +28,9 @@ function App() {
         dispatch({
           type: accionType.CITIESDB,
           cities: response.data.response.cities
-        })
+        })       
+
+   
       })
 
     if (localStorage.getItem("token") !== null) {
@@ -65,7 +67,7 @@ function App() {
   /*      const dataItinerary = []                modo de consumir la data por axios no por dispatch
         axios.get("https://mytinerary-elena.herokuapp.com/api/infoitinerary")
           .then(response => dataItinerary.push(...response.data.response.itinerary))
-          console.log(dataItinerary); */
+       ; */
 
   return (
     <HashRouter>
@@ -75,8 +77,8 @@ function App() {
         <Route path="/cities" element={<Cities />} />
         <Route path="/signin" element={<Signin />} />
          <Route path="/city/:id" element={<City />} />        
-      {/* <Route path="/singup" element={<SignUp />} />
-        <Route path="*" element={<Home />} /> */}
+      {/* <Route path="/singup" element={<SignUp />} />*/}
+       
 
       </Routes>
       <Footer />

@@ -25,7 +25,7 @@ function Signin() {
         detectFrom(UserData)
     }
  /*    const responseFacebook = async (response) => {
-        console.log(response)
+       
         const UserData = {
             email: response.email,
             password: response.id + "Ep",

@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link as LinkRouter } from "react-router-dom";
+import axios from 'axios'
+import { _url } from '../envairoment';
+
 
 import { useStateValue } from "../../StateProvide";
 import { accionType } from '../../reducer'
 import { Checkbox, TextField } from "@mui/material";
 import ActionAreaCard from "../home/ActionAreaCard";
+
 
 import './cities.css'
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -15,7 +19,6 @@ function Cities() {
     //MIS DATOS DB   
     const [{ cities, citiesNew }, dispatch] = useStateValue()
     const [continenteValue, setContinenteValue] = useState("")
-// console.log(cities)
     useEffect(() => {
         window.scrollTo(0, 0);
         dispatch({
@@ -24,33 +27,33 @@ function Cities() {
         })
     }, [])
 
-let newCities = []
-    const handleContinent =(e) =>{
-        // console.log(e.target.value)
-        newCities = cities.filter((item)=>item.continent.includes(e.target.value))
+    let newCities = []
+    const handleContinent = (e) => {
+       
+        newCities = cities.filter((item) => item.continent.includes(e.target.value))
         dispatch({
             type: accionType.FILTER,
             citiesNew: newCities
         })
     }
 
-    const handleCountry =(e) =>{
-        console.log(e.target.value)
-        newCities = cities.filter((item)=>item.country.includes(e.target.value))
+    const handleCountry = (e) => {
+       
+        newCities = cities.filter((item) => item.country.includes(e.target.value))
         dispatch({
             type: accionType.FILTER,
             citiesNew: newCities
         })
     }
-    const handleCity =(e) =>{
-        console.log(e.target.value)
-        newCities = cities.filter((item)=>item.name.includes(e.target.value))
+    const handleCity = (e) => {
+       
+        newCities = cities.filter((item) => item.name.includes(e.target.value))
         dispatch({
             type: accionType.FILTER,
             citiesNew: newCities
         })
     }
-
+  
     return (
         <>
 
@@ -85,7 +88,7 @@ let newCities = []
 
                         <div className="rounded-b-lg py-3.5 mb-3 shadow-md container mx-auto flex flex-col items-center sm:flex sm:flex-row items-center sm:justify-between">
                             <TextField onChange={handleContinent} className="text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="Continent" variant="outlined" />
-                            <TextField onChange={handleCountry}className="text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="Country" variant="outlined" />
+                            <TextField onChange={handleCountry} className="text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="Country" variant="outlined" />
                             <TextField onChange={handleCity} className="city text-field w-52 sm:w-full lg:w-56	md:w-28" id="outlined-basic" label="City" variant="outlined" />
                             <div>
                                 <button className="bg-pink-500 px-6  rounded-lg py-0.5 w-52 sm:w-full lg:w-28 md:w-32	h-11">Search</button>
@@ -115,7 +118,7 @@ let newCities = []
 
                 {cities.length > 0 ? citiesNew.map((item) => {
                     return (<LinkRouter to={`/city/${item._id}`}>
-                    <ActionAreaCard item={item} class_style={"max-w-sm realative	call-page hover:scale-110"} />
+                        <ActionAreaCard item={item} class_style={"max-w-sm realative	call-page hover:scale-110"} />
                     </LinkRouter>)
                 }) : ""}
 

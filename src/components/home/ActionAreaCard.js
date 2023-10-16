@@ -8,15 +8,26 @@ import { CardActionArea } from '@mui/material';
 
 export default function ActionAreaCard(item) {
   const city = item.item
+  
   return (
     <Card className={`${item.class_style}`}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={process.env.PUBLIC_URL + `/image/cities/${city.name}/${city.images.banner2}`}
-          alt={city.name}
-        />
+        {city.actividades ?
+          <CardMedia
+            component="img"
+            height="140"
+            image={process.env.PUBLIC_URL + `/image/itinerary/itinerary${city.nroItinerario}/place3.jpg`}
+            alt={city.city}
+            key={city._id}
+          /> :
+          <CardMedia
+            component="img"
+            height="140"
+            image={process.env.PUBLIC_URL + `/image/cities/${city.name}/${city.images.banner2}`}
+            alt={city.name}
+          />}
+
+
         {
           item.class_style.includes("cities") ? <CardContent>
 
