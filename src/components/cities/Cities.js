@@ -67,7 +67,7 @@ function Cities() {
                 </div>
 
                 {/* banner */}
-                <img className="realative top-0" width={"100%"} src={process.env.PUBLIC_URL + `/image/cities/bannerCities.jpg`} />
+                <img className="realative top-0" width={"100%"} src={process.env.PUBLIC_URL + `/image/cities/bannercities.jpg`} />
 
 
             </div>

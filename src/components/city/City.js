@@ -45,7 +45,7 @@ function City() {
                             </div>
 
                             {/* banner */}
-                            <img className="realative top-0 rounded-lg" width={"100%"} src={process.env.PUBLIC_URL + `/image/cities/${item.name}/banner1.jpg`} />
+                            <img className="realative top-0 rounded-lg" width={"100%"} src={process.env.PUBLIC_URL + `/image/cities/${item.name}/Banner1.jpg`} />
 
                         </div>
 
