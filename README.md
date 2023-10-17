@@ -22,23 +22,23 @@ This is a responsive web site.
 </br>
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/cities-home.png" width="300"/>
 </br>
-### Cities seccion you can filter by continent, country or city name your favorite city
+Cities seccion you can filter by continent, country or city name your favorite city
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/banner-cities.png" width="300"/>
 </br>
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/cities-cards.png" width="300"/>
 </br>
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/login.png" width="300"/>
 </br>
-### You can create an account in My Tinerary
+You can create an account in My Tinerary
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/city-banner.png" width="300"/>
 </br>
-### You will be able to know opinions from another users
+You will be able to know opinions from another users
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/read-comments.png" width="300"/>
 </br>
-### You can comment if you are log in 
+You can comment if you are log in 
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/comments.png" width="300"/>
 </br>
-### This web site is completely responsive 
+This web site is completely responsive 
 <img src="https://www.unopack.com.ar/assets/images/elena/MY%20TINERARY/responsive-city.png" width="300"/>
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
