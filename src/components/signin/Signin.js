@@ -67,12 +67,13 @@ function Signin() {
                         text: "You have started sesion",
                         buttons: "ok"
                     })
+                    backPage()
                 }
                 dispatch({
                     type: accionType.USERDB,
                     user: response.data.response
                 })
-                backPage()
+               
             })
     }
     return (

@@ -67,7 +67,7 @@ function Navbar() {
 
                 </ul>
             </nav>
-            <ul className={`navbar-main flex sm:hidden ${hideButton ? "hidden" : "flex"} justify-around items-center`}>
+            <ul className={`navbar-main flex sm:hidden ${hideButton ? "hidden" : "flex"} justify-center items-center`}>
                 <LinkRouter to="/">
 
                     <li className="">Home</li>
@@ -75,9 +75,9 @@ function Navbar() {
                 <LinkRouter to="/cities">
                     <li className=" ">Cities</li>
                 </LinkRouter>
-                {user?<button onClick={logOut}><LogoutIcon size={'large'}/></button>:  <LinkRouter to="/signin">
-                        <li className="sm:block hidden">Signin</li>
-                    </LinkRouter>}
+               {user?<button onClick={logOut}><LogoutIcon size={'large'}/></button>:<LinkRouter to="/signin">
+                    <li className=" ">Signin</li>
+                </LinkRouter>} 
             </ul>
 
         </>

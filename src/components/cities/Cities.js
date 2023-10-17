@@ -75,8 +75,8 @@ function Cities() {
             {/* aditional information */}
             <div className=" container mx-auto relative p-0 mr-auto ml-auto w-4/6  -top-6 md:-top-20 sm:-top-8 md:w-9/12">
                 <div className="flex flex-col w-full rounded-b-lg ">
-                    <div className="rounded-t-lg bg-white md:w-1/3">
-                        <ul className="flex justify-center	 md:justify-start" >
+                    <div className="rounded-t-lg bg-white flex justify-center md:w-1/3">
+                        <ul className="flex justify-center  md:justify-start" >
                             <li>Explore</li>
 
                             <li>Discover</li>
