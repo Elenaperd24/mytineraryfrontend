@@ -75,9 +75,9 @@ function Navbar() {
                 <LinkRouter to="/cities">
                     <li className=" ">Cities</li>
                 </LinkRouter>
-                <LinkRouter to="/signin">
-                    <li className=" ">Signin</li>
-                </LinkRouter>
+                {user?<button onClick={logOut}><LogoutIcon size={'large'}/></button>:  <LinkRouter to="/signin">
+                        <li className="sm:block hidden">Signin</li>
+                    </LinkRouter>}
             </ul>
 
         </>
