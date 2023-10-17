@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/_mytineraryfrontend/static/css/main.d01dd55a.css",
-    "main.js": "/_mytineraryfrontend/static/js/main.c49612aa.js",
-    "static/js/787.847747be.chunk.js": "/_mytineraryfrontend/static/js/787.847747be.chunk.js",
-    "static/media/revicons.eot": "/_mytineraryfrontend/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/_mytineraryfrontend/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/_mytineraryfrontend/static/media/revicons.e8746a624ed098489406.woff",
-    "index.html": "/_mytineraryfrontend/index.html",
-    "main.d01dd55a.css.map": "/_mytineraryfrontend/static/css/main.d01dd55a.css.map",
-    "main.c49612aa.js.map": "/_mytineraryfrontend/static/js/main.c49612aa.js.map",
-    "787.847747be.chunk.js.map": "/_mytineraryfrontend/static/js/787.847747be.chunk.js.map"
+    "main.css": "/mytineraryfrontend/static/css/main.4d1d12d0.css",
+    "main.js": "/mytineraryfrontend/static/js/main.e952289c.js",
+    "static/js/787.847747be.chunk.js": "/mytineraryfrontend/static/js/787.847747be.chunk.js",
+    "static/media/revicons.eot": "/mytineraryfrontend/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/mytineraryfrontend/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/mytineraryfrontend/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/mytineraryfrontend/index.html",
+    "main.4d1d12d0.css.map": "/mytineraryfrontend/static/css/main.4d1d12d0.css.map",
+    "main.e952289c.js.map": "/mytineraryfrontend/static/js/main.e952289c.js.map",
+    "787.847747be.chunk.js.map": "/mytineraryfrontend/static/js/787.847747be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d01dd55a.css",
-    "static/js/main.c49612aa.js"
+    "static/css/main.4d1d12d0.css",
+    "static/js/main.e952289c.js"
   ]
 }
